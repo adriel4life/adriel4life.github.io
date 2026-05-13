@@ -1,48 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Artists</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nu-Metal Hub | Artists</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="header-content">
+      <h1>Nu-Metal Artists</h1>
+      <p class="tagline">A quick history overview of important bands in the genre.</p>
+    </div>
+  </header>
 
-<header>
-  <h1>Nu-Metal Artists</h1>
-</header>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="artists.html" class="active">Artists</a>
+    <a href="songs.html">Songs &amp; Videos</a>
+    <a href="guide.html">Genre Guide</a>
+    <a href="playlist.html">Playlist Picks</a>
+  </nav>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="artists.html">Artists</a>
-</nav>
+  <main class="container">
+    <section>
+      <h2>Popular Bands</h2>
+      <p>
+        These artists helped shape nu-metal by combining heavy guitars with hip-hop rhythm,
+        intense vocals, electronic textures, and personal lyrics.
+      </p>
 
-<div class="container">
+      <div class="artist-grid">
+        <article class="artist">
+          <img src="https://aestheticmagazinetoronto.com/wp-content/uploads/2019/08/slipknot-toronto-2019-2.jpg?w=500" alt="Slipknot performing on stage">
+          <div>
+            <h3>Slipknot</h3>
+            <p>
+              Slipknot became known for chaotic live performances, horror-inspired masks, and a sound
+              built around aggression, percussion, and dark emotion. Their music helped make nu-metal
+              feel dangerous, theatrical, and unforgettable.
+            </p>
+          </div>
+        </article>
 
-  <h2>Popular Bands</h2>
+        <article class="artist">
+          <img src="https://www.musicweek.com/cimages/ee718ef171c3d9f8de5887cf81f0584f.jpg" alt="Linkin Park band photo">
+          <div>
+            <h3>Linkin Park</h3>
+            <p>
+              Linkin Park blended rock, rap, electronic sounds, and emotional songwriting. Their music
+              reached listeners who connected with themes like frustration, loneliness, pressure, and healing.
+            </p>
+          </div>
+        </article>
 
-  <div class="artist">
-  <h3>Slipknot</h3>
-  <p>Known for intense performances and horror masks.</p>
-  <img src="https://aestheticmagazinetoronto.com/wp-content/uploads/2019/08/slipknot-toronto-2019-2.jpg?w=500" alt="Slipknot">
-</div>
+        <article class="artist">
+          <img src="https://64.media.tumblr.com/4d7ded6b319ca37595af1a0a578a4bb0/tumblr_p4wym8c1s41x7wgdeo1_1280.jpg" alt="Korn band members performing live">
+          <div>
+            <h3>Korn</h3>
+            <p>
+              Korn is often seen as one of the pioneering bands of nu-metal. Their low-tuned guitars,
+              unusual bass tone, and raw lyrics helped create a darker and more personal style of heavy music.
+            </p>
+          </div>
+        </article>
 
-<div class="artist">
-  <h3>Linkin Park</h3>
-  <p>Famous band known for blending rock, rap, and electronic sounds.</p>
-  <img src="https://www.musicweek.com/cimages/ee718ef171c3d9f8de5887cf81f0584f.jpg" alt="Linkin Park">
-</div>
+        <article class="artist">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Deftones_-_Rock_im_Park_2016_-2016155185150_2016-06-03_Rock_im_Park_-_Sven_-_1D_X_-_0497_-_DV3P9581_mod.jpg" alt="Deftones performing at a music festival">
+          <div>
+            <h3>Deftones</h3>
+            <p>
+              Deftones brought a more atmospheric side to heavy music. Their songs often shift between
+              quiet, dreamy sections and explosive guitar-driven moments, giving the genre more emotional range.
+            </p>
+          </div>
+        </article>
 
-<div class="artist">
-  <h3>Korn</h3>
-  <p>Pioneers of the nu-metal sound.</p>
-  <img src="https://64.media.tumblr.com/4d7ded6b319ca37595af1a0a578a4bb0/tumblr_p4wym8c1s41x7wgdeo1_1280.jpg" alt="Korn">
-</div>
+        <article class="artist">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Limp_Bizkit_-_Rock_am_Ring_2013_-_20130607-223254-000.jpg" alt="Limp Bizkit performing at Rock am Ring">
+          <div>
+            <h3>Limp Bizkit</h3>
+            <p>
+              Limp Bizkit emphasized the rap-rock side of nu-metal with loud guitars, turntable energy,
+              and catchy hooks. Their music shows how the genre crossed into mainstream pop culture.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
-</div>
-
-<footer>
-  <p>Nu-Metal Hub</p>
-</footer>
-
+  <footer>
+    <p>Nu-Metal Hub - Adriel Hernandez</p>
+  </footer>
 </body>
 </html>

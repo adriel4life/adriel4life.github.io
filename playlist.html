@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nu-Metal Hub | Playlist Picks</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <h1>My Playlist Picks</h1>
+      <p class="tagline">Personal recommendations for discovering the genre.</p>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="artists.html">Artists</a>
+    <a href="songs.html">Songs &amp; Videos</a>
+    <a href="guide.html">Genre Guide</a>
+    <a href="playlist.html" class="active">Playlist Picks</a>
+  </nav>
+
+  <main class="container">
+    <section>
+      <h2>Starter Playlist</h2>
+      <p>
+        This list is for someone who is new to nu-metal and wants a mix of popular songs,
+        emotional songs, and heavier tracks.
+      </p>
+
+      <table>
+        <caption>Nu-Metal Starter Songs</caption>
+        <thead>
+          <tr>
+            <th>Song</th>
+            <th>Artist</th>
+            <th>Why I Picked It</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>In the End</td>
+            <td>Linkin Park</td>
+            <td>Accessible, emotional, and easy for new listeners to connect with.</td>
+          </tr>
+          <tr>
+            <td>Freak on a Leash</td>
+            <td>Korn</td>
+            <td>A classic example of the darker and stranger side of the genre.</td>
+          </tr>
+          <tr>
+            <td>Duality</td>
+            <td>Slipknot</td>
+            <td>Heavy, intense, and memorable.</td>
+          </tr>
+          <tr>
+            <td>Change</td>
+            <td>Deftones</td>
+            <td>Atmospheric and emotional with a darker mood.</td>
+          </tr>
+          <tr>
+            <td>Rollin'</td>
+            <td>Limp Bizkit</td>
+            <td>Shows the fun, loud, rap-rock side of the genre.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="playlist-tools">
+      <h2>Interactive Playlist Mood Picker</h2>
+      <p>Choose a mood and the page will suggest a song from the playlist.</p>
+      <label for="mood-select">Pick a mood:</label>
+      <select id="mood-select">
+        <option value="">Choose one</option>
+        <option value="angry">Angry / intense</option>
+        <option value="emotional">Emotional / reflective</option>
+        <option value="dark">Dark / atmospheric</option>
+        <option value="fun">Fun / energetic</option>
+      </select>
+      <p id="mood-result">Your suggestion will appear here.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Nu-Metal Hub - Playlist Picks</p>
+  </footer>
+</body>
+</html>

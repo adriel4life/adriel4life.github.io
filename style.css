@@ -1,53 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #111;
-  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #111111;
+  color: #eeeeee;
   margin: 0;
+  line-height: 1.6;
 }
 
-header {
-  background-color: #222;
-  padding: 15px;
+.site-header {
+  background: linear-gradient(135deg, #1b1b1b, #3a0000);
+  padding: 35px 15px;
   text-align: center;
+  border-bottom: 3px solid #ff4d4d;
 }
 
-nav {
-  background-color: #333;
+.header-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  color: #d6d6d6;
+  font-size: 1.1rem;
+}
+
+.site-nav {
+  background-color: #2b2b2b;
   text-align: center;
-  padding: 10px;
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-nav a {
-  color: #ff4d4d;
+.site-nav a {
+  color: #ff7777;
   text-decoration: none;
   margin: 0 10px;
+  font-weight: bold;
 }
 
-nav a:hover {
+.site-nav a:hover,
+.site-nav a:focus,
+.site-nav .active {
+  color: #ffffff;
   text-decoration: underline;
 }
 
 .container {
-  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+section {
+  margin-bottom: 35px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 25px;
+  align-items: center;
+  background-color: #1d1d1d;
+  padding: 22px;
+  border-radius: 12px;
+}
+
+.hero img,
+.guide-section img,
+.artist img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.button,
+button {
+  display: inline-block;
+  background-color: #ff4d4d;
+  color: #111111;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+  background-color: #ff7777;
+}
+
+.card-grid,
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.card,
+.artist,
+.video-card,
+.spotlight,
+.playlist-tools {
+  background-color: #1e1e1e;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #333333;
+}
+
+.card a,
+.link-list a {
+  color: #ff7777;
+}
+
+.artist-grid {
+  display: grid;
+  gap: 20px;
 }
 
 .artist {
-  background-color: #1e1e1e;
-  padding: 10px;
-  margin: 15px 0;
-  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 18px;
+  align-items: center;
 }
 
-img {
+.video-wrapper {
+  position: relative;
   width: 100%;
-  max-width: 400px;
-  display: block;
-  margin-top: 10px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.song-list,
+.link-list {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 18px 18px 18px 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+caption {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+th,
+td {
+  border: 1px solid #444444;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #3a0000;
+  color: #ffffff;
+}
+
+select {
+  padding: 8px;
+  border-radius: 6px;
+  margin-left: 8px;
 }
 
 footer {
-  background-color: #222;
+  background-color: #222222;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   margin-top: 20px;
+  border-top: 1px solid #333333;
+}
+
+@media (max-width: 750px) {
+  .hero,
+  .artist {
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav a {
+    display: inline-block;
+    margin: 6px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
 }

@@ -1,39 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Nu-Metal Hub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nu-Metal Hub | Home</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="header-content">
+      <h1>Nu-Metal Hub</h1>
+      <p class="tagline">Discover the bands, songs, style, and culture behind nu-metal.</p>
+    </div>
+  </header>
 
-<header>
-  <h1>Nu-Metal Hub</h1>
-</header>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html" class="active">Home</a>
+    <a href="artists.html">Artists</a>
+    <a href="songs.html">Songs &amp; Videos</a>
+    <a href="guide.html">Genre Guide</a>
+    <a href="playlist.html">Playlist Picks</a>
+  </nav>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="artists.html">Artists</a>
-</nav>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Welcome to Nu-Metal Hub</h2>
+        <p>
+          Nu-Metal Hub is a simple music discovery website focused on alternative and nu-metal music.
+          The site introduces listeners to major bands, memorable songs, music videos, and the history
+          behind the genre. It is designed for students, casual listeners, and music fans who want a clear
+          starting point without being overwhelmed.
+        </p>
+        <a class="button" href="guide.html">Start with the Genre Guide</a>
+      </div>
+      <img src="https://www.getalternative.com/wp-content/uploads/2023/08/sos1-1024x819.jpg" alt="A live alternative metal concert with bright stage lights">
+    </section>
 
-<div class="container">
+    <section>
+      <h2>Explore the Site</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Featured Artists</h3>
+          <p>Learn about Slipknot, Linkin Park, Korn, Deftones, and Limp Bizkit.</p>
+          <a href="artists.html">View artists</a>
+        </article>
+        <article class="card">
+          <h3>Top Songs &amp; Videos</h3>
+          <p>Watch embedded videos and explore songs that show the sound of the genre.</p>
+          <a href="songs.html">Watch videos</a>
+        </article>
+        <article class="card">
+          <h3>Genre History</h3>
+          <p>Understand the mix of metal, hip-hop, alternative rock, and emotional lyrics.</p>
+          <a href="guide.html">Read the guide</a>
+        </article>
+        <article class="card">
+          <h3>My Playlist Picks</h3>
+          <p>Browse a curated list of personal recommendations for new listeners.</p>
+          <a href="playlist.html">See picks</a>
+        </article>
+      </div>
+    </section>
 
-  <h2>Welcome Page</h2>
+    <section class="spotlight">
+      <h2>Featured Recommendation</h2>
+      <p id="daily-pick">Click the button to get a random nu-metal recommendation.</p>
+      <button type="button" id="pick-button">Recommend a Song</button>
+    </section>
+  </main>
 
-  <p>
-    I will add a paragraph here explaining the influence of bands, band culture, and much more.
-  </p>
-
-<img src="https://www.getalternative.com/wp-content/uploads/2023/08/sos1-1024x819.jpg" alt="Concert">
-  
-  <h3>Featured Artist</h3>
-  <p>Slipknot helped define modern nu-metal music.</p>
-
-</div>
-
-<footer>
-  <p>Adriel Hernandez - CMSCI 256</p>
-</footer>
-
+  <footer>
+    <p>Adriel Hernandez - CMSCI 256</p>
+  </footer>
 </body>
 </html>
